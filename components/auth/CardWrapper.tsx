@@ -14,6 +14,7 @@ export const CardWrapper = ({
   children,
   headerLabel,
   backButtonLabel,
+  backButtonHref,
   showSocial,
 }: CardWrapperProps) => {
   return (
@@ -28,7 +29,7 @@ export const CardWrapper = ({
         </CardFooter>
       )}
       <CardFooter>
-        <BackButton href={backButtonLabel} label={backButtonLabel} />
+        <BackButton href={backButtonHref} label={backButtonLabel} />
       </CardFooter>
     </Card>
   );
