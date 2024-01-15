@@ -3,7 +3,7 @@ import { LoginButtonProps } from "@/types";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const LoginButton = ({
+export const LoginButton = ({
   children,
   mode = "redirect",
   asChild,
@@ -21,5 +21,3 @@ const LoginButton = ({
     </span>
   );
 };
-
-export default LoginButton;

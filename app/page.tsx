@@ -1,4 +1,4 @@
-import LoginButton from "@/components/auth/Login-button";
+import { LoginButton } from "@/components/auth/Login-button";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -8,12 +8,12 @@ export default function Home() {
       h-full"
     >
       <div className="space-y-6 text-center">
-        <h1
+        <h2
           className="text-6xl font-semibold 
                      drop-shadow-md"
         >
           Auth me up !
-        </h1>
+        </h2>
         <p className="text-lg">Let me get in</p>
       </div>
       <LoginButton>
