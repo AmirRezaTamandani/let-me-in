@@ -15,7 +15,7 @@ export default function Home() {
         >
           Auth me up !
         </h1>
-        <p className="text-lg">Let's get in</p>
+        <p className="text-lg">Let me get in</p>
       </div>
       <LoginButton>
         <Button variant="secondary" size="lg">
