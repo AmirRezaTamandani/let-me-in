@@ -19,8 +19,8 @@ export interface BackButtonProps {
   label: string;
 }
 export interface FormErrorsProps {
-  message: string;
+  message?: string;
 }
 export interface FormSuccessProps {
-  message: string;
+  message?: string;
 }
