@@ -19,3 +19,4 @@ const SettingPage = async () => {
 };
 
 export default SettingPage;
+2.51;

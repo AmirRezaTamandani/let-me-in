@@ -1,4 +1,5 @@
 import * as z from "zod";
+
 const isPasswordSimple = (password: string) => {
   return /[A-Z]/.test(password) && /[0-9]/.test(password);
 };

@@ -3,6 +3,10 @@ export interface LoginButtonProps {
   mode?: "modal" | "redirect";
   asChild?: boolean;
 }
+export interface LoginResponse {
+  error: string;
+  success?: string; // Make success property optional if it's not always present
+}
 
 export interface CardWrapperProps {
   children: React.ReactNode;

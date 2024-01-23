@@ -18,6 +18,7 @@ import { Button } from "../ui/button";
 import { FormSuccess } from "../Form-success";
 import { FormError } from "../Form-error";
 import { login } from "@/actions/login";
+import { LoginResponse } from "@/types";
 
 export const LoginForm = () => {
   const [isPending, startTransition] = useTransition();
@@ -34,9 +35,9 @@ export const LoginForm = () => {
     setError("");
     setSuccess("");
     startTransition(() => {
-      login(value).then((data) => {
-        setError(data.error);
-        setSuccess(data.success);
+      login(value).then((data: LoginResponse | undefined) => {
+        setError(data?.error);
+        setSuccess(data?.success);
       });
     });
   };
