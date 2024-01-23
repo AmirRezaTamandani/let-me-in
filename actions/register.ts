@@ -1,7 +1,7 @@
 "use server";
 import { RegisterSchema } from "@/schema";
 import * as z from "zod";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { db } from "@/lib/db";
 import { getUserByEmail } from "@/data/user";
 
@@ -14,7 +14,7 @@ export const register = async (value: z.infer<typeof RegisterSchema>) => {
   const hashedPassword = await bcrypt.hash(password, 10);
 
   const existingUser = await getUserByEmail(email);
- 
+
   if (existingUser) {
     return { error: "Emails is taken" };
   }
